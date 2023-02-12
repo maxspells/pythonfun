@@ -18,6 +18,7 @@ class atk:
             print(mon.currenthp,"hp remaming!")
     def battle():
         while True:
+            print("An angry",mon.name,"stands before you!")
             if mon.currenthp>0:
                 print("What would you like to do?")
                 goto = input("Spell attack - s, Melee attack - m:")
@@ -29,4 +30,5 @@ class atk:
                     print("invalid input")
             else:
                 print("The monster is slain!")
+                char.xp = (char.xp+mon.xp)
                 break

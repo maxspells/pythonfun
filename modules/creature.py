@@ -4,5 +4,6 @@ class mon:
     currenthp = 20
     str = 10
     int = 10
+    xp = 5
 
 
