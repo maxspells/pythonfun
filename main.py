@@ -3,6 +3,8 @@ sys.path.append('modules')
 import sheet
 import battle
 import creature
+import shop
+from shop import shop
 from sheet import char,sheet
 from creature import mon
 from battle import atk,battle
@@ -27,7 +29,7 @@ while True:
     elif goto == "e":
         break
     elif goto == "s":
-        print("coming soon!")
+        shop.hello()
     else:
         print("invalid input")
 print("thanks for playing")
