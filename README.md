@@ -1,0 +1,1 @@
+hi this is a shitty python game I am making to learn how 2 prgoram gud
