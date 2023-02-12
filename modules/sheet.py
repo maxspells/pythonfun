@@ -1,5 +1,6 @@
 class char:
+    name = "default"
     str = 10
     int = 10
-    php = 20
-    ehp = 20
+    maxhp = 20
+    currenthp = 20
