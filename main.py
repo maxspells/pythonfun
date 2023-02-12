@@ -2,8 +2,10 @@ import sys
 sys.path.append('modules')
 import sheet
 import battle
+import creature
 from sheet import char
-from battle import atk
+from creature import mon
+from battle import atk,battle
 print("Welcome to my dumbass game")
 char.name = input("Enter character name:")
 while True:
@@ -16,7 +18,16 @@ while True:
         print("int:",char.int)
         print("xp:",char.xp)
     elif goto == "b":
-        atk.battle()
+        mon.currenthp = mon.maxhp
+        char.currenthp = char.maxhp
+        battle.battlewon=False
+        while battle.battlewon == False:
+            if char.currenthp>0 and mon.currenthp>0:
+                battle.turn()
+                battle.enemyturn()
+            else:
+                print("battle has ended")
+                break
     elif goto == "e":
         break
     else:
