@@ -29,6 +29,7 @@ class battle:
             if battle.battlewon == True:
                 print("The monster is slain!")
                 char.xp = (char.xp+mon.xp)
+                char.gp = (random.randint(1,10)+char.gp)
                 break
             else:
                 print("An angry",mon.name,"stands before you!")
@@ -49,6 +50,7 @@ class battle:
             if battle.battlewon == True:
                 print("The monster is slain!")
                 char.xp = (char.xp+mon.xp)
+                char.gp = (random.randint(1,10)+char.gp)
                 break
             else:
                 print("The",mon.name,"moves in to attack!")

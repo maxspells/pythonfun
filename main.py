@@ -3,20 +3,16 @@ sys.path.append('modules')
 import sheet
 import battle
 import creature
-from sheet import char
+from sheet import char,sheet
 from creature import mon
 from battle import atk,battle
 print("Welcome to my dumbass game")
 char.name = input("Enter character name:")
 while True:
     print("What would you like to do?")
-    goto = input("check character sheet - c, battle - b, exit game - e:")
+    goto = input("character sheet - c, battle - b, shop - s, exit game - e:")
     if goto == "c":
-        print(char.name)
-        print("hp:",char.maxhp)
-        print("str:",char.str)
-        print("int:",char.int)
-        print("xp:",char.xp)
+        sheet.cs()
     elif goto == "b":
         mon.currenthp = mon.maxhp
         char.currenthp = char.maxhp
@@ -30,6 +26,8 @@ while True:
                 break
     elif goto == "e":
         break
+    elif goto == "s":
+        print("coming soon!")
     else:
         print("invalid input")
 print("thanks for playing")
