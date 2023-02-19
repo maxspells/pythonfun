@@ -8,7 +8,7 @@ from shop import shop
 from sheet import char,sheet
 from creature import mon
 from battle import atk,battle
-print("Welcome to my dumbass game")
+print("Welcome to my game")
 char.name = input("Enter character name:")
 while True:
     print("What would you like to do?")
